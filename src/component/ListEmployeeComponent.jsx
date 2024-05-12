@@ -21,7 +21,7 @@ const ListEmployeeComponent = () => {
     navigator("/add-employee");
   }
 
-  function updateEmployee(){
+  function updateEmployee(id){
     navigator(`/edit-employee/${id}`)
   }
 
@@ -32,8 +32,7 @@ const ListEmployeeComponent = () => {
         type="button"
         class="btn btn-primary mb-2"
         onClick={addNewEmployee}
-      >
-        Add Employee
+      >Add Employee
       </button>
       <table className="table table-striped table-bordered">
         <thead>
